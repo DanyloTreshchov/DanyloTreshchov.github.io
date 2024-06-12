@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-y: auto;
 }
 
 main {
@@ -19,8 +20,84 @@ main {
 .left {
     flex: 5;
     order: 1;
+    display: flex;
+    flex-direction: column;
     background-color: #f4f4f4;
     padding: 1vw;
+}
+
+.left .title{
+    flex: 1;
+    padding: 1vh;
+    font-size: 200%;
+    color: #2a3143;
+    height: fit-content;
+}
+
+.projects{
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.project{
+    width: 90%;
+    height: fit-content;
+    padding: 1vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2a3143;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #fff;
+}
+
+.project:hover{
+    width: 95%;
+}
+
+.project-icon{
+    width: 20%;
+    height: auto;
+}
+
+.project-desc{
+    width: 70%;
+    padding: 1vh;
+}
+
+.project-desc-title{
+    font-size: 150%;
+    font-weight: bold;
+    color: #2a3143;
+    text-decoration: dotted;
+}
+
+.project-icon img{
+    width: 100%;
+    height: 100%;
+    image-rendering: pixelated;
+    border-radius: 50%;
+}
+
+.left .fun{
+    flex: 1;
+    padding: 1vh;
+    font-size: 200%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #2a3143;
 }
 
 .right {
@@ -77,5 +154,11 @@ main {
         order: 1;
         flex: 0 0 auto;
         padding-bottom: 2vh;
+    }
+    .projects{
+        min-height: 0;
+    }
+    .project:hover{
+        width: 90%;
     }
 }
