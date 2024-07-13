@@ -100,6 +100,11 @@ main {
     color: #2a3143;
 }
 
+.fun a{
+    color: #2a3143;
+    text-decoration:underline;
+}
+
 .right {
     flex: 2;
     order: 2;
